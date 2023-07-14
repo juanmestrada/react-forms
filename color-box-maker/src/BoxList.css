@@ -1,0 +1,27 @@
+.BoxList-library{
+    padding: 10px;
+}
+
+.BoxList-addbtn{
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    z-index: 100;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.BoxList-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 399px) {
+    .BoxList-addbtn{
+        bottom: 40px;
+        right: 30px;
+    }
+}

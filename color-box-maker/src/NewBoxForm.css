@@ -1,0 +1,56 @@
+.NewBoxForm{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    color: #202124;
+    z-index: 999;
+}
+
+.NewBoxForm.active{
+    top: 0;
+}
+
+.NewBoxForm-backdrop{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.65);
+    transition: all 200ms ease-out;
+}
+
+.NewBoxForm:not(.active) > .NewBoxForm-backdrop{
+    opacity: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #898989;
+    border-radius: 8px;
+    padding: 10px 50px;
+    text-align: start;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.NewBoxForm-input-group{
+    margin-bottom: 16px;
+}
+
+label{
+    margin-right: 10px;
+}
+
+.text-end{
+    text-align: end;
+}
+
+.NewBoxForm-btn{
+    font-weight: 600;
+    padding: 4px 8px;
+}
