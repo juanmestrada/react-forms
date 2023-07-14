@@ -1,0 +1,81 @@
+.TodoList{
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    position: relative;
+    height: 70vh;
+    margin: auto;
+    color: #8a8ca0;
+    font-size: 20px;
+    border: 1px solid #ccd4e4;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-top: 45px;
+    padding: 0 45px;
+    overflow-y: scroll;
+    height: calc(100% - 105px);
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+ul:empty{
+    content: 'You have no tasks to complete';
+ }
+
+ul::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.TodoList-addbtn{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    color: white;
+    background-color: #97b4ff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 576px) {
+
+    .TodoList{
+        width: 100vw;
+        padding: 0;
+    }
+
+    ul{
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .TodoList{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .TodoList{
+        width: 70vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .TodoList{
+        width: 45vw;
+    }
+}

@@ -1,0 +1,30 @@
+li{
+    position: relative;
+    display: block;
+    padding: 20px 25px;
+    border: 1px solid #ccd4e4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: start;
+}
+
+li button{
+    position: absolute;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    font-size: 75%;
+    background-color: #ea4c89;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+
+li:hover button{
+    opacity: 1;
+}

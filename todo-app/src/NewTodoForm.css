@@ -1,0 +1,62 @@
+.NewTodoForm{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    color: #202124;
+    z-index: 999;
+}
+
+.NewTodoForm.active{
+    top: 0;
+}
+
+.NewTodoForm-backdrop{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.65);
+    transition: all 200ms ease-out;
+}
+
+.NewTodoForm:not(.active) > .NewTodoForm-backdrop{
+    opacity: 0;
+}
+
+form{
+    position: relative;
+    width: 35vw;
+    height: 250px;
+    background: white;
+    border: 1px solid #ccd4e4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: auto;
+}
+
+input[type="text"]{
+    width: 100%;
+    font-size: 24px;
+    color: #8a8ca0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccd4e4;
+    margin-top: 20px;
+}
+
+input[type="submit"]{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid #97b4ff;
+    border-radius: 30px;
+    background-color: #97b4ff;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:active{
+    outline: 2px solid #97b4ff;
+}
